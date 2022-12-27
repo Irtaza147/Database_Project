@@ -39,6 +39,7 @@ namespace Project
         private void button_add_Click(object sender, EventArgs e)
         {
 
+
             using (MySqlConnection con = new MySqlConnection(myconnection))
 
             {
@@ -49,6 +50,19 @@ namespace Project
                     com.Parameters.AddWithValue("@p_id", text_pro_id.Text);
                     com.Parameters.AddWithValue("@User_id",text_user_id.Text);
 
+
+                    com.ExecuteNonQuery();
+                    MessageBox.Show("Record save successfully");
+                }
+            }
+            using (MySqlConnection con = new MySqlConnection(myconnection))
+
+            {
+                con.Open();
+
+                using (MySqlCommand com = new MySqlCommand("UPDATE inventory SET stock = stock - 1 WHERE Product_id = @p_id;", con))
+                {
+                    com.Parameters.AddWithValue("@p_id", text_pro_id.Text);
 
                     com.ExecuteNonQuery();
                     MessageBox.Show("Record save successfully");

@@ -116,6 +116,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Cart";
             this.Text = "Cart";
+            this.Load += new System.EventHandler(this.Cart_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dvg_cart)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
