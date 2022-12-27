@@ -77,7 +77,7 @@ namespace Project
             this.Close();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button_name(object sender, EventArgs e)
         {
             using (MySqlConnection con = new MySqlConnection(myconnection))
 
@@ -88,6 +88,25 @@ namespace Project
                 {
                     com.Parameters.AddWithValue("@Product_id", text_id.Text);
                     com.Parameters.AddWithValue("@Name", text_Name.Text);
+
+
+                    com.ExecuteNonQuery();
+                    MessageBox.Show("Record Updated successfully");
+                }
+            }
+        }
+
+        private void button_cat_Click(object sender, EventArgs e)
+        {
+            using (MySqlConnection con = new MySqlConnection(myconnection))
+
+            {
+                con.Open();
+
+                using (MySqlCommand com = new MySqlCommand("update inventory set Price=@Price where Product_id=@Product_id", con))
+                {
+                    com.Parameters.AddWithValue("@Product_id", text_id.Text);
+                    com.Parameters.AddWithValue("@Price", text_price.Text);
 
 
                     com.ExecuteNonQuery();

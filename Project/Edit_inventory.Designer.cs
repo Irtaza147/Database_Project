@@ -195,6 +195,7 @@
             this.button_cat.TabIndex = 16;
             this.button_cat.Text = "Edit_Cat_id";
             this.button_cat.UseVisualStyleBackColor = false;
+            this.button_cat.Click += new System.EventHandler(this.button_cat_Click);
             // 
             // button_name
             // 
