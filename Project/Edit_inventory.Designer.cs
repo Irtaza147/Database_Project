@@ -44,7 +44,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.button_cat = new System.Windows.Forms.Button();
-            this.button_name = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dvg)).BeginInit();
             this.SuspendLayout();
             // 
@@ -197,16 +197,16 @@
             this.button_cat.UseVisualStyleBackColor = false;
             this.button_cat.Click += new System.EventHandler(this.button_cat_Click);
             // 
-            // button_name
+            // button2
             // 
-            this.button_name.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.button_name.Location = new System.Drawing.Point(270, 153);
-            this.button_name.Name = "button_name";
-            this.button_name.Size = new System.Drawing.Size(75, 23);
-            this.button_name.TabIndex = 16;
-            this.button_name.Text = "Edit_Name";
-            this.button_name.UseVisualStyleBackColor = false;
-            this.button_name.Click += new System.EventHandler(this.button3_Click);
+            this.button2.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.button2.Location = new System.Drawing.Point(270, 149);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "Edit_Name";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Edit_inventory
             // 
@@ -214,7 +214,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Project.Properties.Resources.Laptop;
             this.ClientSize = new System.Drawing.Size(895, 450);
-            this.Controls.Add(this.button_name);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button_cat);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -258,5 +258,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button_cat;
         private System.Windows.Forms.Button button_name;
+        private System.Windows.Forms.Button button2;
     }
 }
