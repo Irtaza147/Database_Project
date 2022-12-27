@@ -239,12 +239,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="sufi form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="sufi form.Designer.cs">
-      <DependentUpon>sufi form.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Add_user.resx">
       <DependentUpon>Add_user.cs</DependentUpon>
     </EmbeddedResource>
@@ -319,6 +313,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\id-card-icon-personal-identification-concept-hand-mouse-cursor-clicks-button-pointer-push-press-163418129.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -45,6 +45,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.button_cat = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button_add = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dvg)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,15 +54,15 @@
             // 
             this.dvg.BackgroundColor = System.Drawing.Color.PaleTurquoise;
             this.dvg.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvg.Location = new System.Drawing.Point(546, 153);
+            this.dvg.Location = new System.Drawing.Point(351, 95);
             this.dvg.Name = "dvg";
-            this.dvg.Size = new System.Drawing.Size(347, 203);
+            this.dvg.Size = new System.Drawing.Size(532, 261);
             this.dvg.TabIndex = 0;
             // 
             // button_display
             // 
             this.button_display.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.button_display.Location = new System.Drawing.Point(808, 124);
+            this.button_display.Location = new System.Drawing.Point(808, 68);
             this.button_display.Name = "button_display";
             this.button_display.Size = new System.Drawing.Size(75, 23);
             this.button_display.TabIndex = 1;
@@ -208,12 +210,37 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(307, 21);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(328, 31);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "ADD/EDIT INVENTORY";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // button_add
+            // 
+            this.button_add.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.button_add.Location = new System.Drawing.Point(164, 214);
+            this.button_add.Name = "button_add";
+            this.button_add.Size = new System.Drawing.Size(100, 41);
+            this.button_add.TabIndex = 19;
+            this.button_add.Text = "Add New";
+            this.button_add.UseVisualStyleBackColor = false;
+            this.button_add.Click += new System.EventHandler(this.button_add_Click);
+            // 
             // Edit_inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Project.Properties.Resources.Laptop;
             this.ClientSize = new System.Drawing.Size(895, 450);
+            this.Controls.Add(this.button_add);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button_cat);
             this.Controls.Add(this.label5);
@@ -259,5 +286,7 @@
         private System.Windows.Forms.Button button_cat;
         private System.Windows.Forms.Button button_name;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button_add;
     }
 }

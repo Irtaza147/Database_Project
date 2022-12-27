@@ -62,5 +62,10 @@ namespace Project
             frm.ShowDialog();
             this.Close();
         }
+
+        private void dvg_cart_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

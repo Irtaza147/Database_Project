@@ -37,7 +37,7 @@ namespace Project
             using (MySqlConnection con = new MySqlConnection(myconnection))
             {
                 con.Open();
-                MySqlDataAdapter da = new MySqlDataAdapter("select i.Product_id,i.Name,u.F_name,u.L_name,u.address from user u,inventory i,cart c where u.User_id=c.user_id and c.p_id=i.Product_id;", con);
+                MySqlDataAdapter da = new MySqlDataAdapter("select i.Product_id,i.Name,i.Price,u.F_name,u.L_name,u.address from user u,inventory i,cart c where u.User_id=c.user_id and c.p_id=i.Product_id;", con);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
                 dvg_Order.DataSource = dt;

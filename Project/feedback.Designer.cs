@@ -61,9 +61,9 @@
             // button_submit
             // 
             this.button_submit.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.button_submit.Location = new System.Drawing.Point(405, 283);
+            this.button_submit.Location = new System.Drawing.Point(405, 274);
             this.button_submit.Name = "button_submit";
-            this.button_submit.Size = new System.Drawing.Size(75, 23);
+            this.button_submit.Size = new System.Drawing.Size(96, 40);
             this.button_submit.TabIndex = 3;
             this.button_submit.Text = "SUBMIT";
             this.button_submit.UseVisualStyleBackColor = false;
@@ -83,9 +83,9 @@
             // button_log
             // 
             this.button_log.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.button_log.Location = new System.Drawing.Point(632, 283);
+            this.button_log.Location = new System.Drawing.Point(619, 274);
             this.button_log.Name = "button_log";
-            this.button_log.Size = new System.Drawing.Size(75, 23);
+            this.button_log.Size = new System.Drawing.Size(88, 40);
             this.button_log.TabIndex = 5;
             this.button_log.Text = "LOG OUT";
             this.button_log.UseVisualStyleBackColor = false;

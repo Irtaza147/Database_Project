@@ -51,7 +51,7 @@
             // button_order
             // 
             this.button_order.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.button_order.Location = new System.Drawing.Point(630, 358);
+            this.button_order.Location = new System.Drawing.Point(761, 398);
             this.button_order.Name = "button_order";
             this.button_order.Size = new System.Drawing.Size(104, 33);
             this.button_order.TabIndex = 1;
@@ -63,17 +63,18 @@
             // 
             this.dvg_cart.BackgroundColor = System.Drawing.Color.PaleTurquoise;
             this.dvg_cart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvg_cart.Location = new System.Drawing.Point(216, 217);
+            this.dvg_cart.Location = new System.Drawing.Point(58, 160);
             this.dvg_cart.Name = "dvg_cart";
-            this.dvg_cart.Size = new System.Drawing.Size(408, 174);
+            this.dvg_cart.Size = new System.Drawing.Size(566, 278);
             this.dvg_cart.TabIndex = 2;
+            this.dvg_cart.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvg_cart_CellContentClick);
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.button2.Location = new System.Drawing.Point(630, 217);
+            this.button2.Location = new System.Drawing.Point(641, 160);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 25);
+            this.button2.Size = new System.Drawing.Size(125, 63);
             this.button2.TabIndex = 1;
             this.button2.Text = "DISPLAY";
             this.button2.UseVisualStyleBackColor = false;
@@ -82,9 +83,9 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.button1.Location = new System.Drawing.Point(630, 248);
+            this.button1.Location = new System.Drawing.Point(641, 229);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 25);
+            this.button1.Size = new System.Drawing.Size(125, 58);
             this.button1.TabIndex = 3;
             this.button1.Text = "CLEAR CART";
             this.button1.UseVisualStyleBackColor = false;
@@ -93,9 +94,9 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.button3.Location = new System.Drawing.Point(630, 327);
+            this.button3.Location = new System.Drawing.Point(641, 398);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(104, 25);
+            this.button3.Size = new System.Drawing.Size(104, 33);
             this.button3.TabIndex = 4;
             this.button3.Text = "Back";
             this.button3.UseVisualStyleBackColor = false;

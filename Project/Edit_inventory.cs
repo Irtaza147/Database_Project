@@ -85,10 +85,10 @@ namespace Project
             {
                 con.Open();
 
-                using (MySqlCommand com = new MySqlCommand("update inventory set Price=@Price where Product_id=@Product_id", con))
+                using (MySqlCommand com = new MySqlCommand("update inventory set cat_id=@cat_id where Product_id=@Product_id", con))
                 {
                     com.Parameters.AddWithValue("@Product_id", text_id.Text);
-                    com.Parameters.AddWithValue("@Price", text_price.Text);
+                    com.Parameters.AddWithValue("@cat_id", text_cat_id.Text);
 
 
                     com.ExecuteNonQuery();
@@ -114,6 +114,34 @@ namespace Project
                     MessageBox.Show("Record Updated successfully");
                 }
             }
+        }
+
+        private void button_add_Click(object sender, EventArgs e)
+        {
+            using (MySqlConnection con = new MySqlConnection(myconnection))
+
+            {
+                con.Open();
+
+                using (MySqlCommand com = new MySqlCommand("insert into inventory (Product_id,Price,Name,Stock,cat_id)" + "values (@Product_id,@Price,@Name,@stock,@cat_id)", con))
+                {
+                    com.CommandType = CommandType.Text;
+                    com.Parameters.AddWithValue("@Product_id", text_id.Text);
+                    com.Parameters.AddWithValue("@Name", text_Name.Text);
+                    com.Parameters.AddWithValue("@cat_id", text_cat_id.Text);
+                    com.Parameters.AddWithValue("@Price", text_price.Text);
+                    com.Parameters.AddWithValue("@stock", text_stock.Text);
+
+
+                    com.ExecuteNonQuery();
+                    MessageBox.Show("Record Updated successfully");
+                }
+            }
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

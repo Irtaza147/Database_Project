@@ -121,16 +121,19 @@
   <data name="Laptop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Laptop.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="log" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\log.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="login-hero" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login-hero.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="id-card-icon-personal-identification-concept-hand-mouse-cursor-clicks-button-pointer-push-press-163418129" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\id-card-icon-personal-identification-concept-hand-mouse-cursor-clicks-button-pointer-push-press-163418129.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="log" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\log.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="id-card-icon-personal-identification-concept-hand-mouse-cursor-clicks-button-pointer-push-press-163418129" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\id-card-icon-personal-identification-concept-hand-mouse-cursor-clicks-button-pointer-push-press-163418129.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="avatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\avatar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
