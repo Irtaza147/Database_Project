@@ -67,5 +67,10 @@ namespace Project
         {
 
         }
+
+        private void Cart_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

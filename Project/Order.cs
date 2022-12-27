@@ -21,6 +21,17 @@ namespace Project
 
         private void button_Order_Click(object sender, EventArgs e)
         {
+            using (MySqlConnection con = new MySqlConnection(myconnection))
+
+            {
+                con.Open();
+
+                using (MySqlCommand com = new MySqlCommand("delete from cart", con))
+                {
+
+                    com.ExecuteNonQuery();
+                }
+            }
             this.Hide();
             feedback frm = new feedback();
             frm.ShowDialog();
