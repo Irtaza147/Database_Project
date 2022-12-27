@@ -39,12 +39,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.text_Name = new System.Windows.Forms.TextBox();
+            this.text_cat_id = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.button_cat = new System.Windows.Forms.Button();
+            this.button_name = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dvg)).BeginInit();
             this.SuspendLayout();
             // 
@@ -152,19 +152,19 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // text_Name
             // 
-            this.textBox1.Location = new System.Drawing.Point(164, 149);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 12;
+            this.text_Name.Location = new System.Drawing.Point(164, 149);
+            this.text_Name.Name = "text_Name";
+            this.text_Name.Size = new System.Drawing.Size(100, 20);
+            this.text_Name.TabIndex = 12;
             // 
-            // textBox2
+            // text_cat_id
             // 
-            this.textBox2.Location = new System.Drawing.Point(164, 175);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 13;
+            this.text_cat_id.Location = new System.Drawing.Point(164, 175);
+            this.text_cat_id.Name = "text_cat_id";
+            this.text_cat_id.Size = new System.Drawing.Size(100, 20);
+            this.text_cat_id.TabIndex = 13;
             // 
             // label4
             // 
@@ -186,25 +186,27 @@
             this.label5.TabIndex = 15;
             this.label5.Text = "Enter Category_ID";
             // 
-            // button2
+            // button_cat
             // 
-            this.button2.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.button2.Location = new System.Drawing.Point(270, 178);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Edit_Cat_id";
-            this.button2.UseVisualStyleBackColor = false;
+            this.button_cat.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.button_cat.Location = new System.Drawing.Point(270, 178);
+            this.button_cat.Name = "button_cat";
+            this.button_cat.Size = new System.Drawing.Size(75, 23);
+            this.button_cat.TabIndex = 16;
+            this.button_cat.Text = "Edit_Cat_id";
+            this.button_cat.UseVisualStyleBackColor = false;
+            this.button_cat.Click += new System.EventHandler(this.button_cat_Click);
             // 
-            // button3
+            // button_name
             // 
-            this.button3.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.button3.Location = new System.Drawing.Point(270, 153);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Edit_Name";
-            this.button3.UseVisualStyleBackColor = false;
+            this.button_name.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.button_name.Location = new System.Drawing.Point(270, 153);
+            this.button_name.Name = "button_name";
+            this.button_name.Size = new System.Drawing.Size(75, 23);
+            this.button_name.TabIndex = 16;
+            this.button_name.Text = "Edit_Name";
+            this.button_name.UseVisualStyleBackColor = false;
+            this.button_name.Click += new System.EventHandler(this.button3_Click);
             // 
             // Edit_inventory
             // 
@@ -212,12 +214,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Project.Properties.Resources.Laptop;
             this.ClientSize = new System.Drawing.Size(895, 450);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button_name);
+            this.Controls.Add(this.button_cat);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.text_cat_id);
+            this.Controls.Add(this.text_Name);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -250,11 +252,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox text_Name;
+        private System.Windows.Forms.TextBox text_cat_id;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button_cat;
+        private System.Windows.Forms.Button button_name;
     }
 }
