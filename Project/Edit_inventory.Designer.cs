@@ -104,6 +104,7 @@
             this.text_id.Name = "text_id";
             this.text_id.Size = new System.Drawing.Size(100, 20);
             this.text_id.TabIndex = 6;
+            this.text_id.TextChanged += new System.EventHandler(this.text_id_TextChanged);
             // 
             // text_price
             // 

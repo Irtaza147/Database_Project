@@ -68,8 +68,16 @@ namespace Project
                     com.CommandType = CommandType.Text;
                     com.Parameters.AddWithValue("@User_id", text_delete.Text);
 
-                    com.ExecuteNonQuery();
-                    MessageBox.Show("Record Deleted successfully");
+                    try
+                    {
+                        com.ExecuteNonQuery();
+                        MessageBox.Show("Record Deleted successfully :)");
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Kindly insert correct value :(");
+                    }
+
                 }
             }
         }
@@ -85,10 +93,17 @@ namespace Project
                 {
                     com.Parameters.AddWithValue("@User_id", text_id.Text);
                     com.Parameters.AddWithValue("@f_name", text_f_name.Text);
- 
 
-                    com.ExecuteNonQuery();
-                    MessageBox.Show("Record Updated successfully");
+
+                    try
+                    {
+                        com.ExecuteNonQuery();
+                        MessageBox.Show("Record Updated successfully :)");
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Kindly insert correct values :(");
+                    }
                 }
             }
         }
@@ -105,9 +120,15 @@ namespace Project
                     com.Parameters.AddWithValue("@User_id", text_id.Text);
                     com.Parameters.AddWithValue("@L_name", text_l_name.Text);
 
-
-                    com.ExecuteNonQuery();
-                    MessageBox.Show("Record Updated successfully");
+                    try
+                    {
+                        com.ExecuteNonQuery();
+                        MessageBox.Show("Record Updated successfully :)");
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Kindly insert correct values :(");
+                    }
                 }
             }
         }
@@ -126,8 +147,15 @@ namespace Project
                     com.Parameters.AddWithValue("@password", text_pass.Text);
 
 
-                    com.ExecuteNonQuery();
-                    MessageBox.Show("Record Updated successfully");
+                    try
+                    {
+                        com.ExecuteNonQuery();
+                        MessageBox.Show("Record Updated successfully :)");
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Kindly insert correct values :(");
+                    }
                 }
             }
         }
@@ -145,8 +173,15 @@ namespace Project
                     com.Parameters.AddWithValue("@address", text_add.Text);
 
 
-                    com.ExecuteNonQuery();
-                    MessageBox.Show("Record Updated successfully");
+                    try
+                    {
+                        com.ExecuteNonQuery();
+                        MessageBox.Show("Record Updated successfully :)");
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Kindly insert correct values :(");
+                    }
                 }
             }
         }
@@ -167,8 +202,15 @@ namespace Project
                     com.Parameters.AddWithValue("@address", text_add.Text);
 
 
-                    com.ExecuteNonQuery();
-                    MessageBox.Show("Record Updated successfully");
+                    try
+                    {
+                        com.ExecuteNonQuery();
+                        MessageBox.Show("Record Updated successfully :)");
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Kindly insert correct values :(");
+                    }
                 }
             }
         }

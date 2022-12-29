@@ -41,9 +41,16 @@ namespace Project
                     com.Parameters.AddWithValue("@f_name", text_name.Text);
                     com.Parameters.AddWithValue("@comment", text_comment.Text);
 
-                    com.ExecuteNonQuery();
-                    MessageBox.Show("Thanks for your Feedback");
-                }
+                    try
+                    {
+                        com.ExecuteNonQuery();
+                        MessageBox.Show("Thanks for your Feedback :)");
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Feedback must not be Empty");
+                    }
+                    }
             }
         }
 

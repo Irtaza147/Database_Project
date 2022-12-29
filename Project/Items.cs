@@ -50,9 +50,16 @@ namespace Project
                     com.Parameters.AddWithValue("@p_id", text_pro_id.Text);
                     com.Parameters.AddWithValue("@User_id",text_user_id.Text);
 
-
-                    com.ExecuteNonQuery();
-                    MessageBox.Show("Record save successfully");
+                    try
+                    {
+                        com.ExecuteNonQuery();
+                        MessageBox.Show("Record save successfully :(");
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Kindly Insert correct value :(");
+                    } 
+                    
                 }
             }
             using (MySqlConnection con = new MySqlConnection(myconnection))
@@ -65,7 +72,6 @@ namespace Project
                     com.Parameters.AddWithValue("@p_id", text_pro_id.Text);
 
                     com.ExecuteNonQuery();
-                    MessageBox.Show("Record save successfully");
                 }
             }
         }

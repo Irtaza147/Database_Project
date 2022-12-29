@@ -52,8 +52,15 @@ namespace Project
                     com.Parameters.AddWithValue("@password", text_pass.Text.Trim());
                     com.Parameters.AddWithValue("@address", text_add.Text.Trim());
 
-                    com.ExecuteNonQuery();
-                    MessageBox.Show("Record save successfully");
+                    try
+                    {
+                        com.ExecuteNonQuery();
+                        MessageBox.Show("Record save successfully");
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Kindly insert correct values");
+                    }
                 }
                 this.Hide();
                 login_user frm = new login_user();

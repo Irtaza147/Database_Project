@@ -32,8 +32,15 @@ namespace Project
                     com.Parameters.AddWithValue("@f_name", text_stock.Text);
 
 
-                    com.ExecuteNonQuery();
-                    MessageBox.Show("Record Updated successfully");
+                    try
+                    {
+                        com.ExecuteNonQuery();
+                        MessageBox.Show("Record Updated successfully :)");
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Kindly insert correct values :(");
+                    }
                 }
             }
         }
@@ -63,8 +70,15 @@ namespace Project
                     com.Parameters.AddWithValue("@Price", text_price.Text);
 
 
-                    com.ExecuteNonQuery();
-                    MessageBox.Show("Record Updated successfully");
+                    try
+                    {
+                        com.ExecuteNonQuery();
+                        MessageBox.Show("Record Updated successfully :)");
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Kindly insert correct values :(");
+                    }
                 }
             }
         }
@@ -91,8 +105,15 @@ namespace Project
                     com.Parameters.AddWithValue("@cat_id", text_cat_id.Text);
 
 
-                    com.ExecuteNonQuery();
-                    MessageBox.Show("Record Updated successfully");
+                    try
+                    {
+                        com.ExecuteNonQuery();
+                        MessageBox.Show("Record Updated successfully :)");
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Kindly insert correct values :(");
+                    }
                 }
             }
         }
@@ -110,8 +131,15 @@ namespace Project
                     com.Parameters.AddWithValue("@Name", text_Name.Text);
 
 
-                    com.ExecuteNonQuery();
-                    MessageBox.Show("Record Updated successfully");
+                    try
+                    {
+                        com.ExecuteNonQuery();
+                        MessageBox.Show("Record Updated successfully :)");
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Kindly insert correct values :(");
+                    }
                 }
             }
         }
@@ -133,13 +161,25 @@ namespace Project
                     com.Parameters.AddWithValue("@stock", text_stock.Text);
 
 
-                    com.ExecuteNonQuery();
-                    MessageBox.Show("Record Updated successfully");
+                    try
+                    {
+                        com.ExecuteNonQuery();
+                        MessageBox.Show("Record Updated successfully :)");
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Kindly Insert correct values :(");
+                    }
                 }
             }
         }
 
         private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void text_id_TextChanged(object sender, EventArgs e)
         {
 
         }
